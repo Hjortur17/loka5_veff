@@ -11596,6 +11596,8 @@ a:hover {
   font-size: 23px;
 }
 
+/* Dropdown contnent in the navbar */
+
 .dropbtn {
   background-color: transparent;
   color: white;
@@ -11794,7 +11796,10 @@ a:hover {
 /* SIDEBAR CATEGORIES STYLE */
 
 .tags li {
+  float: left;
+  display: inline-block;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 /* FOOTER STYLE */
@@ -11884,5 +11889,49 @@ footer .fa-envelope {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
+}
+
+/* POSTS - LAYOUTS */
+
+#posts h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#posts p {
+  text-align: justify;
+}
+
+.info-panel a {
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
+/* ADMIN - DASHBOARD */
+
+.admin-button {
+  background: none;
+  border: 0px;
+  font-size: 15px;
+  float: right;
+}
+
+.admin-button svg {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.admin-button svg:hover {
+  color: #e55050;
+}
+
+/* ADMIN - MANAGE TABLE */
+
+.manageItem tr {
+  background: #f5f5f5;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
 }
 

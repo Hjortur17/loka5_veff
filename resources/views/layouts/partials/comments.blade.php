@@ -1,9 +1,9 @@
 @if ($flash = session('message'))
 	<script type="text/javascript">
 		swal({
-			title: "Opps! Somethings went wrong", 
+			title: "Good job!", 
 			text: "{{ $flash }}", 
-			icon: "error",
+			icon: "success",
 			button: false,
 			timer: 2500,
 		});
@@ -12,11 +12,6 @@
 
 @foreach ($post->comments as $comment)
 	<article class="media" id="comments">
-		<figure class="media-left">
-			<p class="image is-64x64">
-				<img src="https://bulma.io/images/placeholders/128x128.png">
-			</p>
-		</figure>
 		<div class="media-content">
 			<div class="content">
 				<p>
@@ -42,11 +37,6 @@
 		{{ csrf_field() }}
 
 		<article class="media">
-			<figure class="media-left">
-				<p class="image is-64x64">
-					<img src="https://bulma.io/images/placeholders/128x128.png">
-				</p>
-			</figure>
 			<div class="media-content">
 				<div class="field">
 					<p class="control">

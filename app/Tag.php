@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
+	protected $fillable = [
+		'tags'
+	];
+
 	public function posts()
 	{
 		return $this->belongsToMany(Post::class);
@@ -14,6 +18,6 @@ class Tag extends Model
 
 	public function getRouteKeyName()
 	{
-		return 'name';
+		return 'tags';
 	}
 }

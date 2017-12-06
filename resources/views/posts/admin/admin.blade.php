@@ -47,9 +47,12 @@
 						<tbody>
 							@foreach ($posts as $post)
 								<tr>
-									<td>{{ $post->title }}</td>
 									<td>
-										<a class="button is-small is-primary" href="/posts/{{ $post->slug }}" style="font-weight: bold;">View Post</a>
+										<a href="/posts/{{ $post->slug }}">{{ $post->title }}</a>
+									</td>
+
+									<td>
+										@include ('posts.admin.delete')
 									</td>
 								</tr>
 							@endforeach
@@ -57,7 +60,7 @@
 					</table>
 				</div>
 			</div>
-		</div>        
+		</div>
 	</div>
 	<div class="column is-6">
 		<div class="card">

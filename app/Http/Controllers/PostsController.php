@@ -21,6 +21,8 @@ class PostsController extends Controller
 
 	public function show(Post $post)
 	{
-		return view('posts.show', compact('post'));
+		$tags = Tag::get();
+
+		return view('posts.show', compact('post', 'tags'));
 	}
 }

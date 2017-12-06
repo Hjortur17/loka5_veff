@@ -27,7 +27,7 @@ class Post extends Model
 	}
 
 	protected $fillable = [
-		'title', 'description', 'tags', 'requirements', 'link_to_image', 'user_id', 'slug'
+		'title', 'description', 'requirements', 'link_to_image', 'user_id', 'slug'
 	];
 
 	public function tags()

@@ -29,12 +29,12 @@
 		</form>
 	</div>
 	<div class="sidebar_box tags is-centered">
-		<h3>Categories</h3>
+		<h3>Tags</h3>
 			<ul>
 				@foreach($tags as $tag)
 					<li>
-						<a href="/posts/tags/{{ $tag->name }}">
-							{{ $tag->name }}
+						<a href="/posts/tags/{{ $tag->tags }}">
+							{{ $tag->tags }}
 						</a>
 					</li>
 				@endforeach

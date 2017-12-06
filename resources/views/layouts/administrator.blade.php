@@ -33,10 +33,10 @@
 					<li>
 						<a>Things to manages</a>
 						<ul>
-							<li><a href="#">Posts</a></li>
-							<li><a href="#">Comments</a></li>
-							<li><a href="#">Users</a></li>
-							<li><a href="#">Tags</a></li>
+							<li><a href="/admin/manage">Posts</a></li>
+							<li><a href="/admin/manage">Comments</a></li>
+							<li><a href="/admin/manage">Users</a></li>
+							<li><a href="/admin/manage">Tags</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -45,12 +45,10 @@
 		<div class="column is-9">
 			<section class="hero is-info welcome is-small">
 				<div class="hero-body">
-					<div class="container">
-						<h1 class="title">
-							Welcome back, {{ Auth::user()->name }}.
-						</h1>
-						<h2 class="subtitle" style="font-size: 1.2rem;">{{ $subtitle }}</h2>
-					</div>
+					<h1 class="title">
+						Welcome back, {{ Auth::user()->name }}.
+					</h1>
+					<h2 class="subtitle" style="font-size: 1.2rem;">{{ $subtitle }}</h2>
 				</div>
 			</section>
 			@yield ('content')

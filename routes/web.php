@@ -18,11 +18,7 @@ Route::get('/posts/tags/{tag}', 'TagsController@index');
 // Route to the Profile
 Route::get('/profile', 'ProfileController@index')->name('profile');
 
-// Route to the Admin Dashboard
-Route::get('/admin', 'AdminController@index')->name('admin');
+// Route for every route connected to the AdminController
+Route::get('/admin/manage', 'AdminController@manage');
 
-// Route for the admin to create new post
-Route::get('/admin/create', 'AdminController@create');
-
-// This will post the create form to the database
-Route::post('/admin/post', 'AdminController@store');
+Route::resource('admin', 'AdminController');
